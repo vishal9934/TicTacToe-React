@@ -21,9 +21,9 @@ const Board = () => {
         if(state[a]!==null &&state[a]===state[b] && state[a]===state[c]){
             return state[a];
         }
-        else{
-            return null;
-        }
+        // else{
+        //     return null;
+        // }
      }
      return false;
     }
@@ -34,7 +34,7 @@ const Board = () => {
             return;
         }
        const copyState=[...state];
-       copyState[index]=isXRurn?"X":"0";
+       copyState[index]=isXRurn?"X":"O";
        setState(copyState)
        setIsXTurn(!isXRurn);
     }
@@ -49,7 +49,7 @@ const Board = () => {
             <>{isWinner} Won the Game <button onClick={handleReset}>Play Again</button></>
         ) :(
             <>
-            <h2>player {isXRurn ? "X":"0"} Please Move</h2>
+            <h2>player {isXRurn ? "X":"O"} Please Move</h2>
             {/* <h1>ccndskcv</h1> */}
       <div className="board-row">
         <Square onClick={()=>handleClick(0)} value={state[0]}/>
