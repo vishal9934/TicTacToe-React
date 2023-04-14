@@ -1,0 +1,2 @@
+.board-row{justify-content:space-evenly}.board-row,.square{align-items:center;display:flex}.square{border:3px solid #000;height:100px;justify-content:center;width:100%}.board-container{background:linear-gradient(180deg,#3cf 0,#f9c);margin:auto;width:50%}body{background-color:#99e7e5}
+/*# sourceMappingURL=main.74e8113b.css.map*/
